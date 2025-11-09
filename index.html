@@ -12,10 +12,11 @@
         <div class="container">
             <footer class="bg-[#659f8f]">
                 <div class="container px-6 py-12 mx-auto">
-                    <div class="grid grid-cols-4 gap-4">
-                        <div class="sm:col-span-2">
+                    <div class="grid grid-cols-1 gap-4 lg:grid-cols-4 md:grid-cols-2">
+                        <!--col-span-2 ensures that div takes 2 columns. Any number can be specified. Same thing for large screens-->
+                        <div class="md:col-span-2">
                             <h1 class="max-w-lg text-[20px]">Subscribe to our newsletter for updates.</h1>
-                            <form class="flex flex-row gap-x-10">
+                            <form class="flex flex-col gap-y-2 md:flex-row md:gap-x-2 lg:flex-row lg:gap-x-2">
                                 <input class="rounded px-6" id="email" type="email" placeholder="Email Address">
                                 <!--px-6 padding on left & right--><!--w-full total width the button is allowed to takeup, it will take up-->
                                 <button class="rounded text-white text-[14px] py-2.5 px-10 bg-orange-600">
